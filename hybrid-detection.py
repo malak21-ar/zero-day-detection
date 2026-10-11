@@ -76,7 +76,7 @@ decisions_zeroday = [
 n_total = len(decisions_zeroday)
 n_detected = decisions_zeroday.count("ZERO-DAY")
 
-print("\n ZERO-DAY SIMULÉ (famille DoS)")
+print("\n TEST SUR ZERO-DAY SIMULÉ (famille DoS)")
 print("Total lignes testées :", n_total)
 print(f"Détectées comme ZERO-DAY : {n_detected} ({100*n_detected/n_total:.1f}%)")
 print(f"Ratées (classées normales) : {n_total - n_detected} ({100*(n_total-n_detected)/n_total:.1f}%)")
@@ -84,7 +84,7 @@ print(f"Ratées (classées normales) : {n_total - n_detected} ({100*(n_total-n_d
 
 
 #test sur une attaque CONNUE (probe) 
-print("\n=== TEST SUR UNE ATTAQUE CONNUE (probe) ===")
+print("\n TEST SUR UNE ATTAQUE CONNUE (probe) ")
 
 indices_probe = [
     i for i in range(len(data["df_test"]))
